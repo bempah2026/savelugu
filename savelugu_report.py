@@ -28,13 +28,7 @@ logo_base64 = load_image(logo_path)
 # Define a function to create a capacity-building training plan
 
 
-# Display logo and title
-st.markdown(f"""
-    <div style="display: flex; align-items: center;">
-        <img src="coat.png" alt="Logo" width="80" style="margin-right: 10px;">
-        <h1 style="color: white; margin: 0;">Report on Savelugu Municipal Demographics and Development Overview</h1>
-    </div>
-""", unsafe_allow_html=True)
+st.title("📊 Report on Savelugu Municipal Demographics and Development Overview")
 
 
 
