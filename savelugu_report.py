@@ -32,7 +32,7 @@ def get_base64_image(image_path):
     with open(image_path, "rb") as image_file:
         encoded = base64.b64encode(image_file.read()).decode()
     return f"data:image/png;base64,{encoded}"
-logo_base64 = get_base64_image("Images/coat.png")  # no ./ needed
+logo_base64 = get_base64_image("coat.png")  # no ./ needed
 # Display logo and title
 st.markdown(f"""
     <div style="display: flex; align-items: center;">
