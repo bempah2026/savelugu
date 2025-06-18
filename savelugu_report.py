@@ -27,16 +27,11 @@ cropped_logo =load_image(cropped)
 logo_base64 = load_image(logo_path)
 # Define a function to create a capacity-building training plan
 
-# Load the image and convert to base64
-def get_base64_image(image_path):
-    with open(image_path, "rb") as image_file:
-        encoded = base64.b64encode(image_file.read()).decode()
-    return f"data:image/png;base64,{encoded}"
-logo_base64 = get_base64_image("coat.png")  # no ./ needed
+
 # Display logo and title
 st.markdown(f"""
     <div style="display: flex; align-items: center;">
-        <img src="{logo_base64}" alt="Logo" width="80" style="margin-right: 10px;">
+        <img src="coat.png" alt="Logo" width="80" style="margin-right: 10px;">
         <h1 style="color: white; margin: 0;">Report on Savelugu Municipal Demographics and Development Overview</h1>
     </div>
 """, unsafe_allow_html=True)
